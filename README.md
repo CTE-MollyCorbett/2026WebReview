@@ -23,7 +23,7 @@ Every HTML file has the same SKELETON (Boilerplate, template, whatever) structur
     <link>
     <style></style>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
         - Makes the page RESPONSIVE.
 </head>
 <body>
