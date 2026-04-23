@@ -8,41 +8,111 @@
 <body>
     <header>
         <h1>Potsdam</h1>
-        <p>Home of the Toilet Gardens!</p>
+        <p>Home of the Toilet Gardens!</p> <!-- Only in Potsdam can you find someone doing this. -->
     </header>
     <nav>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="attractions">Attractions</a></li>
+            <li><a href="facts">Quick Facts</a></li>
+            <li><a href="sights">Top Sights</a></li>
+            <li><a href="exlinks">Links</a></li>
+            <li><a href="contact">Contact Me</a></li>
         </ul>
     </nav>
     <main>
         <section id="about">
-            <p></p>
-            <p></p>
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus reprehenderit ratione odio laboriosam? Animi possimus alias odio quo nam explicabo in provident velit laborum adipisci accusantium, eos quos! Ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatum ipsam officiis at quam adipisci laudantium veniam numquam excepturi perferendis perspiciatis tempora, praesentium, cum aut eius eveniet deleniti esse culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt asperiores sapiente totam explicabo optio saepe, nobis voluptates quod, corrupti nemo porro facere neque similique veritatis non, placeat maxime aspernatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero cumque obcaecati iusto eos ad iure maiores sed officia. Pariatur illo quidem fugiat, itaque porro commodi quia dicta non earum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem officia non reprehenderit magnam, aut quo vitae tenetur voluptates autem. Id vitae ipsum nihil doloribus excepturi sapiente error nostrum consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ea aliquam asperiores, enim reprehenderit a maiores soluta, labore nisi blanditiis quaerat libero quas deleniti eveniet sequi esse id iste fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos enim eveniet aspernatur iste cupiditate incidunt dolorem quo et velit? Magnam repellendus est rem harum ullam voluptas? Dolorem, culpa temporibus.</p>
         </section>
-        <section id="attractions">
+        <section id="attractions"> <!-- Really the only things to do in Potsdam. -->
             <h2>Attractions</h2>
+            <img src="images/sifael-ndandala-nyazpKTLVq0-unsplash.jpg" alt="Pine trees in the snow during the day">
             <ul>
-                <li><img src="" alt=""></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>SummerFest</li>
+                <li>Pine Street Arena</li>
+                <li>Raquette River</li>
+                <li>Potsdam Animal Shelter</li>
+                <li>Ives Park</li>
             </ul>
         </section>
-        <section>
-
+        <section id="facts"> <!-- A table containing very brief facts about things in Potsdam. -->
+            <h2>Quick Facts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>What It Is</th>
+                        <th>Age</th>
+                        <th>Present Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Toilet Gardens</th>
+                        <td>25 Years Old</td>
+                        <td>A grudge between Hank Robar and the inconsistent Potsdam Town Board</td>
+                    </tr>
+                    <tr>
+                        <th>Potsdam Fire Dept.</th>
+                        <td>1857 Years Old</td>
+                        <td>An entirely volunteer fire department, with three engines and a working antique.</td>
+                    </tr>
+                    <tr>
+                        <th>Fall Island</th>
+                        <td>Acquired 1978</td>
+                        <td>Has a canoe launch, bathrooms, playground, dock, pavillion, and memorial.</td>
+                    </tr>
+                    <tr>
+                        <th>SUNY Potsdam</th>
+                        <td>220 Years Old</td>
+                        <td>Originally the St. Lawrence Academy, and one of the 50 oldest colleges in America.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <section>
-
+        <section id="sights">
+            <h2>Top Sights</h2>
+            <ol>
+                <li>Fall Island</li>
+                <li>100-Year-Old Firetruck</li>
+                <li>Sandstone Trail</li>
+                <li>Toilet Gardens</li>
+                <li>Pine Street Beach</li>
+            </ol>
         </section>
-        <section>
-
+        <section id="exlinks"> <!-- Links to where I got my information. -->
+            <h3>External Links</h3>
+            <a href="https://northcountrynow.com/stories/slideshow-potsdam-fire-truck-still-running-100-years-later,311291">The Queen Mary</a><br>
+            <a href="https://www.newyorkupstate.com/entertainment/2022/08/potty-town-documentary-lifts-the-lid-on-upstate-ny-mans-toilet-gardens.html">Potty Town</a><br>
+            <a href="https://villageofpotsdamny.gov/fall-island-park/">Fall Island</a>
         </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto:student@sllboces.org" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Write your name here" required><br>
+                <label for="grade">Age Range:</label>
+                <select name="grade" id="grade" required> <!-- Drop-down for a very basic age range selection. -->
+                    <option value="age1">1 Digit Age</option>
+                    <option value="age2">2 Digit Age</option>
+                    <option value="age3">3 Digit Age</option>
+                </select><br>
+                <label for="bio">Tell us about yourself:</label>
+                <textarea name="bio" id="bio" rows="4" required></textarea><br>
+                <input type="checkbox" id="potsdam" name="potsdam">
+                <label for="potsdam">I live in Potsdam.</label><br>
+                <p>Please select one:</p> <!-- Buttons to choose between the firetruck or Fall Island. -->
+                <input type="radio" id="downtown" name="downtown" value="fallisland">
+                <label for="downtown">Fall Island</label>
+                <input type="radio" id="downtown" name="downtown" value="firetruck">
+                <label for="downtown">The Queen Mary</label><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>Molly Corbett | 2026</p>
+        </footer>
     </main>
 </body>
 </html>
