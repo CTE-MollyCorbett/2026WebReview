@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-navy: #003366;
+    --color-gold: #F5A800;
+    --color-white: #FFFFFF;
+    --font-main: 'Segoe UI', Arial, sans-serif;
+    --spacing-md: 1.5rem;
+}
+/* ----------------------------- BODY ---------------------------- */
+.majority {
+    margin: 2rem;
+}
+main {
+    background-color: lightblue;
+    color: #001144;
+}
+h2, h3 {
+    color: var(--color-gold);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+section {
+    padding-bottom: 1rem;
+}
+/* -------------------------- TOP NAVIGATION ------------------------ */
+nav {
+    padding: 1.5rem;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-menu li {
+    margin: 0 0.5rem;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-gold);
+    background-color: var(--color-navy);
+    display: block;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+.nav-menu a:hover {
+    background: blue;
+    color: var(--color-white);
+}
+.nav-container {
+    background-color: var(--color-navy);
+    padding: 0rem 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--spacing-md) var(--color-navy);
+}
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    text-decoration: underline;
+    padding: 0.5rem 0rem;
+}
+/* ----------------------------- HERO SECTION --------------------------- */
+#hero {
+    background-image: url('images/sifael-ndandala-nyazpKTLVq0-unsplash.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* Dark overlay so white text is readable */
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0; /* top/right/bottom/left: 0 */
+    background: rgba(0, 51, 102, 0.6);
+    z-index: 1;
+}
+/* Text above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #FFFFFF;
+    text-align: center;
+}
+/* ----------------------------- TABLE ---------------------------- */
+table, th, td {
+    background-color: lightgray;
+    border: navy 0.1rem solid;
+}
+/* ----------------------------- FORM ---------------------------- */
+
+/* ----------------------------- LISTS ---------------------------- */
+ul, ol {
+    text-decoration: none;
+    list-style: none;
+}
+/* ----------------------------- FOOTER ---------------------------- */
+footer {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: 3rem 2rem 1.5rem;
+}
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.footer-column {
+    flex: 1 1 180px; /* grow | shrink | min-width */
+}
+.footer-column h4 {
+    color: var(--color-gold);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+.footer-column a {
+    display: block;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    padding: 0.25rem 0;
+    transition: color 0.2s;
+}
+.footer-column a:hover {
+    color: var(--color-gold);
+}
